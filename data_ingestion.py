@@ -8,13 +8,12 @@ def ingest_bts_data(db1b_path, t100_path):
     # Loading DB1B (True Demand)
     demand_df = pd.read_csv(db1b_path)
     
-    # Cleaning SQL-style: Filtering out international connections
-    # and normalizing airport codes for Dubuque (DBQ) [cite: 33, 70]
+    # Filtering out international connections and normalizing airport codes for Dubuque (DBQ)
     clean_demand = demand_df[demand_df['Origin'] == 'DBQ']
     
     # Merging with T-100 (Actual Supply)
     supply_df = pd.read_csv(t100_path)
     
-    # The 'Ghost Route' logic: Where demand exists but segments = 0
+    # Identifying where demand exists but direct segments = 0
     # ... (pipeline continues)
     return merged_data
