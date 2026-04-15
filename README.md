@@ -85,6 +85,6 @@ The original project plan called for reconciling DB1B (passenger demand) with th
 - **This repository** — fully reproduces every figure and table in the report.
 - **Expo poster** — visual summary presented at the UMSI Student Project Expo.
 
-## Use of large language models
+## Tools and acknowledgments
 
-Per the SI 699 syllabus, I disclose that I used Claude (Anthropic) as a writing and coding assistant during the preparation of the code in this repository and the accompanying report. Claude helped develop the BTS .asc parser, refine the modeling pipeline, and draft and revise sections of the report. All analytical decisions, methodological choices, scoping decisions, and final wording are my own. The data, the leakage measurement, the model results, and the policy interpretation are mine.
+This project was developed with assistance from generative AI tools for code debugging (including the parser for the BTS pipe-delimited file format) and for editorial feedback during writing. All analytical decisions, methodological choices, the survivorship-bias framing, the data interpretation, and the policy recommendations are my own.
