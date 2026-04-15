@@ -1,0 +1,38 @@
+# Data files — too large for git, must be downloaded by user
+data/raw_zips/*.zip
+data/db1b_asc/*.asc
+data/db1b/*.csv
+data/*.parquet
+
+# Keep the directory structure
+!data/raw_zips/.gitkeep
+!data/db1b_asc/.gitkeep
+!data/db1b/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model artifacts (regenerated on run)
+outputs/*.joblib
+outputs/diagnostic_dump.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
